@@ -1,7 +1,7 @@
 
 spring:
   application:
-    name: spring-boot-admin-sample-war
+    name: Spring boot admin console
   boot:
     admin:
       client:
@@ -39,5 +39,5 @@ spring:
         password: "password"   #can register at the protected server api
         instance:
           metadata:
-            user.name: "user"         #These two are needed so that the server
-            user.password: "password" #can access the protected client endpoints
+            user.name: ${spring.security.user.name}
+            user.password: ${spring.security.user.password}
