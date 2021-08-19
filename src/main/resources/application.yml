@@ -1,12 +1,15 @@
+server:
+  port: 40000
+
 spring:
   application:
     name: Spring boot admin console (si-spring-admin-jar)
   boot:
     admin:
       client:
-        url: http://localhost:8080
+        url: http://localhost:40000
         instance:
-          service-base-url: http://localhost:8080
+          service-base-url: http://localhost:40000
   profiles:
     active:
       - secure
@@ -40,3 +43,7 @@ spring:
           metadata:
             user.name: ${spring.security.user.name}
             user.password: ${spring.security.user.password}
+
+logging:
+  file:
+    name: logfile.txt
