@@ -70,7 +70,6 @@ public class Application extends SpringBootServletInitializer {
                                             HttpMethod.DELETE.toString()),
                                     new AntPathRequestMatcher(this.adminServer.path("/actuator/**"))));
         }
-
     }
 
     @Profile("secure")
