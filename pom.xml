@@ -9,11 +9,11 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>de.sranko_informatik</groupId>
-    <artifactId>si-spring-admin</artifactId>
+    <artifactId>si-spring-admin-jar</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>war</packaging>
-    <name>si-spring-admin</name>
-    <description>Demo project for Spring Boot</description>
+    <packaging>jar</packaging>
+    <name>si-spring-admin-jar</name>
+    <description>Spring Boot Administartor</description>
     <properties>
         <java.version>1.8</java.version>
         <spring-boot-admin.version>2.3.1</spring-boot-admin.version>
@@ -27,13 +27,7 @@
             <groupId>de.codecentric</groupId>
             <artifactId>spring-boot-admin-starter-server</artifactId>
         </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-tomcat</artifactId>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
+          <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
